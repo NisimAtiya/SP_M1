@@ -1,6 +1,6 @@
 
 #include "NumClass.h"
-int length(long long n)
+int length(int n)
 {
     if (n == 0)
         return 1;
