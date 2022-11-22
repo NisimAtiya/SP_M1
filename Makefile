@@ -11,12 +11,12 @@ maindloop: main.o libclassloop.so
 
 
 
-loops: libclassloop.so
+loopd: libclassloop.so
 
 
 libclassloop.so: basicclassfunction.o advancedClassificationLoop.o
 	#gcc -c -Wall -Werror -fPIC basicclassfunction.c advancedClassificationloop.c
-	gcc -shared -Wall -o libclassloops.so advancedClassificationLoop.o basicclassfunction.o -lm
+	gcc -shared -fPIC -Wall -o libclassloops.so advancedClassificationLoop.o basicclassfunction.o -lm
 
 
 mains: mains.exe
@@ -26,7 +26,7 @@ mains.exe: main.o libclassrec.a
 recursived: libclassrec.so
 libclassrec.so: basicclassfunction.o  advancedClassificationRecursion.o
 	#gcc -c -Wall -Werror -fPIC basicclassfunction.c  advancedClassificationRecursion.c
-	gcc -shared -Wall -o libclassrec.so basicclassfunction.o  advancedClassificationRecursion.o -lm
+	gcc -shared -fPIC -Wall -o libclassrec.so basicclassfunction.o  advancedClassificationRecursion.o -lm
 
 
 recursives: libclassrec.a
