@@ -12,7 +12,7 @@ int ezer(int n,int l);
 int rec_fact(int n);
 int length(int n);
 int my_pow(int n, int j);
-int length(long long n);
+int length(int n);
 int my_pow(int n, int j);
 
 #endif
