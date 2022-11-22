@@ -8,7 +8,7 @@ int rec_fact_(int n){
     }
     return n* rec_fact_(n-1);
 }
-int length_(long long n)
+int length_(int n)
 {
     if (n == 0)
         return 1;
