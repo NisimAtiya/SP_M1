@@ -4,10 +4,10 @@ all: maindloop mains maindrec libclassloops.a libclassloop.so libclassrec.a libc
 
 
 maindrec: main.o libclassrec.so
-	gcc -Wall -g -o maindrec main.o ./libclassrec.so
+	gcc -Wall -g -o maindrec main.o -L.
 
 maindloop: main.o libclassloop.so
-	gcc -Wall -g -o maindloop main.o ./libclassloop.so
+	gcc -Wall -g -o maindloop main.o -L.
 
 
 
