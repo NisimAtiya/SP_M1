@@ -8,7 +8,7 @@ int my_pow(int n, int j) {
     }
     return cnt;
 }
-int length(long long n)
+int length(int n)
 {
     if (n == 0)
         return 1;
