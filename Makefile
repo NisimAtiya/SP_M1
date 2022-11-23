@@ -19,10 +19,10 @@ libclassloops.a : $(OBJECTSLOOP)
 libclassrec.a : $(OBJECTSREC)
 	$(AR) -rcs libclassrec.a $(OBJECTSREC)
 
-libclassrec.so : $(OBJECTS_REC)
+libclassrec.so : $(OBJECTSREC)
 	$(CC) -shared -o libclassrec.so $(OBJECTSREC)
 
-libclassloops.so : $(OBJECTS_LOOP)
+libclassloops.so : $(OBJECTSLOOP)
 	$(CC) -shared -o libclassloops.so $(OBJECTSLOOP)
 
 mains : $(MAIN) libclassrec.a
