@@ -1,14 +1,11 @@
-
-
-
 #include "NumClass.h"
-int rec_fact_(int n){
+int rec_fact(int n){
     if(n==1){
         return 1;
     }
-    return n* rec_fact_(n-1);
+    return n* rec_fact(n-1);
 }
-int length_(int n)
+int length(int n)
 {
     if (n == 0)
         return 1;
@@ -19,12 +16,22 @@ int length_(int n)
     }
     return count;
 }
-int my_pow_(int n, int j) {
-    int cnt = 1;
-    for(int i = 0; i<j; i++){
-        cnt = cnt * n;
+int isStrong(int n){
+    int sum=0;
+    int n_=n;
+    int i;
+    int temp;
+    while (n_ > 0){
+        i=1;
+        temp=n_%10;
+        for(int j = 1; j <= temp; j++){
+            i *= j;
+        }
+        sum += i;
+        n_/= 10;
     }
-    return cnt;
+    return (sum==n);
+
 }
 int isPrime(int n){
 
@@ -36,15 +43,3 @@ int isPrime(int n){
 
     return 1;
 }
-int isStrong(int n){
-    int n_ = n;
-    int sum = 0;
-    int l = length_(n_);
-    for (int i = 0; i < l ; ++i) {
-        int j = n_ %10;
-        sum += rec_fact_(j);
-        n_ = n_/10;
-    }
-    return (sum==n);
-}
-
