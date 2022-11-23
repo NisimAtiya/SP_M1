@@ -1,18 +1,14 @@
+#ifndef _NumClass_H_
+#define _NumClass_H_
 
-#ifndef CLIONPROJECTS_NUMCLASS_H
-#define CLIONPROJECTS_NUMCLASS_H
-int isArmstrong(int n);
-int isPalindrome(int n);
-int isPrime(int n);
-int isStrong(int n);
-int rec_fact_(int n);
-int length_(int n);
-int my_pow_(int n, int j);
-int ezer(int n,int l);
-int rec_fact(int n);
-int length(int n);
-int my_pow(int n, int j);
-int length(int n);
-int my_pow(int n, int j);
+int isStrong(int);
+int isPrime(int);
+int isPalindrome(int);
+int isArmstrong(int);
+int Armstrong(int,int);
+int rec_fact(int);
+int length(int);
+int my_pow(int,int);
+int rec_revers(int );
 
 #endif
