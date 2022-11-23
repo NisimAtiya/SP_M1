@@ -7,7 +7,7 @@ MAIN=main.o
 OBJECTSLOOP=basicClassification.o advancedClassificationLoop.o
 OBJECTSREC=basicClassification.o advancedClassificationRecursion.o
 
-all: libclassloops.a libclassrec.a libclassrec.so libclassloops.so mains maindloop maindrec
+all: libclassloops.a libclassrec.a libclassrec.so libclassloops.so mains maindloop maindrec loops
 loops: libclassloops.a
 loopd: libclassloops.so
 recursives: libclassrec.a
