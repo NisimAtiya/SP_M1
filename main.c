@@ -4,7 +4,6 @@
 
 int main() {
     int start,end;
-    //printf("Enter plese 2 number: ");
     scanf("%d %d", &start, &end);
     printf("The Armstrong numbers are: ");
     for (int i = start; i <=end ; ++i) {
